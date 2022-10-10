@@ -2,6 +2,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import shop.Flower;
+import shop.FlowerBucket;
+import shop.FlowerPack;
 import shop.Rose;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

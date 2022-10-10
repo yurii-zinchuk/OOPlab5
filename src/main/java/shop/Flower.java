@@ -11,11 +11,9 @@ public class Flower {
     private int price;
     private FlowerColor color;
 
-    public Flower () {
+    public Flower () {}
 
-    }
-
-    protected Flower (int price, int sepalLength, FlowerColor color) {
+    public Flower (int price, int sepalLength, FlowerColor color) {
         this.price = price;
         this.sepalLength = sepalLength;
         this.color = color;
