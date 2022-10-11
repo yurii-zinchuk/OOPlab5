@@ -1,9 +1,10 @@
 package shop;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket {
-    private List<FlowerPack> FlowerPacks;
+    private List<FlowerPack> FlowerPacks = new ArrayList<FlowerPack>();
     private int price = 0;
 
     public FlowerBucket() {}
