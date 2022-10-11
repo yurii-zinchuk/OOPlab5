@@ -22,4 +22,4 @@ jobs:
           distribution: "adopt"
 
       - name: Test With Maven
-        run: mvn --batch-mode --update-snapshots shop
+        run: mvn --batch-mode --update-snapshots package
