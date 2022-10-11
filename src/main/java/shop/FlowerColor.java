@@ -1,11 +1,11 @@
 package shop;
 
 public enum FlowerColor {
-    RED,
+    RED ,
     BLUE,
     YELLOW,
     GREEN,
     WHITE,
     PINK,
-    ORANGE
+    ORANGE;
 }

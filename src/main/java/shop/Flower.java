@@ -9,19 +9,27 @@ import java.util.concurrent.Flow;
 public class Flower {
     private int sepalLength;
     private int price;
-    private FlowerColor color;
+    private String color;
 
-    public Flower () {
+    public Flower () {}
 
-    }
-
-    protected Flower (int price, int sepalLength, FlowerColor color) {
+    public Flower (int price, int sepalLength, FlowerColor color) {
         this.price = price;
         this.sepalLength = sepalLength;
-        this.color = color;
+//        this.color = color;
+        setColor(color);
     }
 
+
     public void setColor(FlowerColor color) {
-        this.color = color;
+        switch (color) {
+            case RED -> this.color = "#FF0000";
+            case BLUE -> this.color = "#FF0000";
+            case GREEN -> this.color = "#FF0000";
+            case ORANGE -> this.color = "#FF0000";
+            case YELLOW -> this.color = "#FF0000";
+            default -> throw new IndexOutOfBoundsException();
+        }
     }
 }
+
