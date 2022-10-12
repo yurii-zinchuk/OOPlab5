@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: Set up runner
     runs-on: ubuntu-latest
 
     steps:
