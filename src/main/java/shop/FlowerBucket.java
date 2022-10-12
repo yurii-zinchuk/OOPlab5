@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket {
-    private List<FlowerPack> FlowerPacks;
-    private int price = 0;
+    private final List<FlowerPack> flowerPacks;
+    private double price = 0;
 
     public FlowerBucket() {
-        FlowerPacks = new ArrayList<FlowerPack>();
+        flowerPacks = new ArrayList<>();
     }
 
     public void add (FlowerPack flowerPack) {
-        FlowerPacks.add(flowerPack);
+        flowerPacks.add(flowerPack);
         price += flowerPack.getPrice();
     }
 
-    public int getPrice () {
+    public double getPrice () {
         return price;
     }
 }

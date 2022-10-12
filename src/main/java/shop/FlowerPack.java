@@ -4,9 +4,9 @@ import lombok.Getter;
 
 @Getter
 public class FlowerPack {
-    private Flower flower;
-    private int amount;
-    private int price;
+    private final Flower flower;
+    private final int amount;
+    private final double price;
 
     public FlowerPack(Flower flower, int amount) {
         this.flower = flower;
