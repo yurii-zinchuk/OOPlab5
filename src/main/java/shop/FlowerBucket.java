@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlowerBucket {
-    private List<FlowerPack> FlowerPacks = new ArrayList<FlowerPack>();
+    private List<FlowerPack> FlowerPacks;
     private int price = 0;
 
-    public FlowerBucket() {}
+    public FlowerBucket() {
+        FlowerPacks = new ArrayList<FlowerPack>();
+    }
 
     public void add (FlowerPack flowerPack) {
         FlowerPacks.add(flowerPack);
